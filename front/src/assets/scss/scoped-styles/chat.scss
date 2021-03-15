@@ -1,0 +1,33 @@
+$typingHeiht: 50px;
+$borderRadiusOut: 30px;
+$borderRadiusIn: 5px;
+$marginBottom: 20px;
+
+.chat {
+    .messages {
+        .message {
+            display: flex;
+            margin-bottom: $marginBottom;
+            &.reverse {
+                justify-content: flex-end;
+                .block {
+                    background: var(--chat-block-bg-reverse);
+                    color: var(--chat-block-color-reverse);
+                    border-radius: $borderRadiusOut;
+                    border-bottom-right-radius: $borderRadiusIn;
+                }
+            }
+            .block {
+                background: var(--chat-block-bg);
+                color: var(--chat-block-color);
+                max-width: 350px;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                border-radius: $borderRadiusOut;
+                border-bottom-left-radius: $borderRadiusIn;
+            }
+        }
+    }
+    .typing--text {
+    }
+}

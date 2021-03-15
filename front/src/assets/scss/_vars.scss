@@ -1,0 +1,21 @@
+$containerWidth: 1000px;
+$headerHeight: 50px;
+$borderRadius: 50px;
+.App {
+    --main-background: #e9effd;
+    --container-background: white;
+    --chat-block-bg: #f6f8fd;
+    --chat-block-color: black;
+    --chat-block-bg-reverse: #567af3;
+    --chat-block-color-reverse: white;
+}
+
+/*
+* Fonts
+*/
+$fontsRobotoPath: '';
+
+/*
+* Buttons
+*/
+$buttonIconSize: 30px;

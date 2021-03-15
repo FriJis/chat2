@@ -1,0 +1,22 @@
+.btn {
+    user-select: none;
+    cursor: pointer;
+
+    &.icon {
+        width: $buttonIconSize;
+        line-height: $buttonIconSize;
+        height: $buttonIconSize;
+        border-radius: $buttonIconSize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &.grey {
+        &:hover {
+            background: rgba(0, 0, 0, 0.205);
+        }
+        &:active {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+}

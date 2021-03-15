@@ -1,0 +1,36 @@
+@import "fa/fontawesome.scss";
+@import "vars";
+@import "mixins";
+@import "fonts.scss";
+@import "./components/buttons.scss";
+body {
+    font-family: Roboto-light;
+    margin: 0;
+    padding: 0;
+    .App {
+        background: var(--main-background);
+
+        header {
+            height: $headerHeight;
+            .inner {
+                width: 100%;
+                max-width: $containerWidth;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+        .container {
+            background: var(--container-background);
+            width: 100%;
+            height: calc(100vh - #{$headerHeight});
+            overflow: auto;
+            max-width: $containerWidth;
+            margin: 0 auto;
+            border-radius: $borderRadius $borderRadius 0 0;
+            box-sizing: border-box;
+            padding: 40px;
+        }
+    }
+}
